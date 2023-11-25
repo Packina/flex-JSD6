@@ -3,42 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Navbar */
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 60px;
-    height: 120px;
+.nav-left{
     width: 100%;
-}
-input[type=text]{
-    width: 450px;
-    border: 2px solid gainsboro;
-    border-radius: 30px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('https://www.w3schools.com/css/searchicon.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-}
-
-.nav-right, .nav-left {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    gap: 50px;
+}
+.nav-middle{
+    display: none;
+}
+.nav-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+}
+.nav-right p{
+    padding: 30px 30px 20px;
     font-family: 'Cormorant', serif;
     font-size: 23px;
-    margin: 0 50px;
+    line-height: 15px;
 }
-
-/* Section:Banner */
 .banner{
-
     width: 100%;
-    height: 400px;
+    height: 200px;
     display: flex;
     flex-direction:column;
     justify-content: flex-end;
@@ -46,12 +37,12 @@ input[type=text]{
     background-color: #F8EAD6;;
 }
 .banner > h1{
-    font-size: 100px;
+    font-size: 50px;
     font-family: 'DM Serif Display', serif;
     color: #572409;
 }
 .banner button{
-    width: 250px;
+    width: 140px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: #CEB68B; 
     border: none;
@@ -61,16 +52,55 @@ input[type=text]{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 15px 2px;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
-    margin: 20px;
 }
-/* Section: Button */
-.shop-button{
-    display: flex;
-    justify-content: center;
+.normal-button button{
+    display: none;
+}
+.filter-bar{
+    display: none;
+}
+.product-pic{
+    display: none;
+}
+.hotitem-pic{
+    display: none;
+}
+footer{
+    display: none;
+}
+@media only screen and (min-width: 768px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    input[type=text]{
+        display: flex;
+        width: 350px;
+        border: 2px solid gainsboro;
+        border-radius: 30px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('https://www.w3schools.com/css/searchicon.png');
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+    .nav-middle{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+   
+  .shop-button{
+    display: flex; 
+    justify-content: center; 
     align-items: center;
     font-family: 'Cormorant', serif;
     font-size: 23px;
@@ -82,15 +112,115 @@ input[type=text]{
     color: white;
     padding: 16px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    text-decoration: none; 
+    display: inline-block; 
     font-size: 16px;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 10px;
+} 
+.product-pic img{
+    width: 150px;
 }
-/* Section:Product */
+.product-pic{
+    display: flex;
+    justify-content: space-evenly;
+}
+h4{
+    font-family: 'Cormorant', serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+} 
+.hotitem-pic{
+    display: none;
+}
+}
+@media only screen and (min-width: 1000px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    input[type=text]{
+        display: flex;
+        width: 350px;
+        border: 2px solid gainsboro;
+        border-radius: 30px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('https://www.w3schools.com/css/searchicon.png');
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+    .nav-middle{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-right{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+        font-family: 'Cormorant', serif;
+        font-size: 23px;
+        margin: 0 50px;
+    }
+    * .banner{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #F8EAD6;;
+    }
+    .banner > h1{
+        font-size: 100px;
+        font-family: 'DM Serif Display', serif;
+        color: #572409;
+    }
+    .banner button{
+        width: 250px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        background-color: #CEB68B; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; 
+        transition-duration: 0.4s;
+        margin: 20px;
+        height: 50px;
+    } 
+    .normal-button button{
+        background-color: #CEB68B; 
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none; 
+        display: inline-block; 
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 10px;
+        width: 180px;
+    } 
+.filter-bar{
+    display: flex;
+}
 .product-pic img{
     width: 280px;
 }
@@ -103,27 +233,17 @@ h4{
     font-size: 18px;
     text-align: center;
     margin: 10px;
-}
-/* Section: Popular item */
-.popular-item{
-    /* background-color: #F8EAD6; */
-}
-.popular-pic img{
-    width: 400px;
+} 
+.hotitem-pic img{
     width: 280px;
 }
-.popular-pic{
+.hotitem-pic{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
 }
-h2{
+.popular-item{
     display: flex;
-    justify-content: center;
-    font-size: 60px;
-    font-family: 'Cormorant', serif;
-    color: black;
-    margin: 80px 0 30px 80px;
+    flex-direction: row;
 }
 footer{
     display: flex;
@@ -131,4 +251,40 @@ footer{
     font-size: 20px;
     font-family: 'Cormorant', serif;
     margin: 50px;
+}
+}
+
+@media only screen and (min-width: 1451px){
+    .normal-button button{
+        background-color: #CEB68B; 
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none; 
+        display: inline-block; 
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 10px;
+        width: 120px;
+}
+}
+@media(min-width: 1001px) and (max-width: 1450px){
+    .normal-button button{
+        background-color: #CEB68B; 
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none; 
+        display: inline-block; 
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 10px;
+        width: 100px;
+}
 }
