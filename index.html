@@ -7,23 +7,60 @@
     <title>Document</title>
     <link href="./style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Cormorant+Garamond:ital,wght@0,300;1,600&family=Cormorant:wght@300&family=Playfair+Display:ital@1&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Cormorant+Garamond:ital,wght@0,300;1,600&family=Cormorant:wght@300&family=Playfair+Display:ital@1&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+    <header>
         <div class="nav-left">
-            <img src="Picture/logo.png"/>
+            <img src="Picture/logo.png" alt="logo"/>
         </div>
         <div class="nav-middle">
             <input type="text" name="search" placeholder="Search here"/>
         </div>
         <div class="nav-right">
-            <diV class="home">Home</diV>
-            <diV class="about">About</diV>
-            <diV class="product">Product</diV>
-            <diV class="contact">Contact</diV>
+            <diV class="home">Home</div>
+            <diV class="about">About</div>
+            <diV class="product">Product</div>
+            <diV class="contact">Contact</div>
         </div>
-    </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h1>NEW<br>COLLECTION</h1>
+            <button>Shop Now</button>
+        </section>
+        
+        <section class="shop-button">
+            <div class="normal-button">
+                <button>New in</button>
+                <button>Tops</button>
+                <button>Dress</button>
+                <button>Bottoms</button>
+                <button>Skirts</button>
+                <button>Sweaters</button>
+            </div>
+            <div class="filter-bar">
+                <label for="filter">Filter by:</label>
+                <select id="filter" name="filter">
+                    <option>New in</option>
+                    <option>Tops</option>
+                    <option>Dress</option>
+                    <option>Bottoms</option>
+                    <option>Skirts</option>
+                    <option>Sweaters</option>
+                </select>
+                <label for="sort">Sort by:</label>
+                <select id="sort" name="sort">
+                    <option>Price</option>
+                    <option>Size</option>
+                    <option>Color</option>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>

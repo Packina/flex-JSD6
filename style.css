@@ -3,18 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-nav{
-    /* background-color: #87C4FF; */
-    position: fixed;
+/* Navbar */
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 60px;
-    height: 100px;
+    height: 120px;
     width: 100%;
 }
-
 input[type=text]{
     width: 450px;
     border: 2px solid gainsboro;
@@ -26,6 +24,7 @@ input[type=text]{
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
 }
+
 .nav-right, .nav-left {
     display: flex;
     align-items: center;
@@ -34,22 +33,61 @@ input[type=text]{
     font-size: 23px;
     margin: 0 50px;
 }
-@media(max-width: 1400px){
-    nav{
-        display: inline-block;
-    }
+
+/* Section:Banner */
+.banner{
+
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #F8EAD6;;
 }
-@media(max-width: 1400px){
-    input[type=text]{
-     display: none;
+.banner > h1{
+    font-size: 100px;
+    font-family: 'DM Serif Display', serif;
+    color: #572409;
 }
+.banner button{
+    width: 250px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #CEB68B; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    margin: 20px;
 }
-@media(max-width: 1400px){
-    .nav-right{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+/* Section: Button */
+.shop-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant', serif;
+    font-size: 23px;
+    margin:20px;
 }
+.normal-button button{
+    background-color: #CEB68B; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
-    
