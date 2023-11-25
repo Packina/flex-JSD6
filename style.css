@@ -90,4 +90,18 @@ input[type=text]{
     cursor: pointer;
     border-radius: 10px;
 }
+/* Section:Product */
+.product-pic img{
+    width: 280px;
+}
+.product-pic{
+    display: flex;
+    justify-content: space-evenly;
+}
+h4{
+    font-family: 'Cormorant', serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
 
+}
